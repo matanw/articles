@@ -11,7 +11,7 @@ const shashaArticle = {
     sections: [
         {
             title: "Graeco-Roman Libation Evidence and Christian Perspectives (Pages 12-26)",
-            paragraphs: 
+            paragraphs: [
                 {
                     english: "The libation ritual was relatively standard, at least in Athens, and judging at least by the literary and iconographical evidence. A small amount wine, neat or mixed with water, was poured on an altar (sometimes, but not necessarily, over a burning sacrifice), or alternatively on the ground. It was usually poured from a phiale (a shallow dish designated for libations), but sometimes from an oinochoe (wine jug); it could also be poured from an oinochoe into a tilted phiale (which could be held by another person), and from there make its way to the ground. The rest of the wine was then drunk, sometimes directly from the phiale, and shared among the participants. Libations were usually offered together with prayers.",
                     hebrew_literal: "טקס הנסיכה היה יחסית סטנדרטי, לפחות באתונה, ולפי להכי הראיות הספרותיות והאיקונוגרפיות. כמות קטנה של יין, טהור או מעורבב עם מים, היה שפוך על מזבח (לפעמים, אך לא בהכרח, מעל קרבן בוער), או לחלופין על הקרקע. הוא היה בדרך כלל שפוך מנסיכה (כלי רדוד מיועד לנסיכות), אך לפעמים מאואינוכואה (כד יין); היה אפשר גם להשפוך מאואינוכואה לנסיכה משופעת (שיכלה להיות מוחזקת על ידי אדם אחר), ומשם להגיע לקרקע. יתר היין היה אז שתוי, לפעמים ישירות מהנסיכה, ונחלק בין המשתתפים. נסיכות היו בדרך כלל מוגשות יחד עם תפילות.",
