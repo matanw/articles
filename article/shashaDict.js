@@ -50,9 +50,13 @@ const shashaArticle = {
                     hebrew_natural: "ההנחה הזאת של הרבנים – שגויים הם 'נסכנים כפויים' – לא מתבטאת בבירור במקורות רבניים. אבל אם תקרא בעיון את הכללים הרבניים בנוגע ליין של גויים, זה יתברר לך בברור. בואו נראה כמה דוגמאות מן המשנה:"
                 },
                 {
-                    english: "If a non-Jew was carrying jars of wine with a Jew from one place to another, if the presumption was that it [the wine] / he [the non-Jew] was being watched, it is permitted. But if he [the Jew] told him that he was going out, [the wine is forbidden if there was] enough time for [the non-Jew] to bore a hole, stop it up, and dry it. R. Simon b. Gamaliel says: enough time to open it, seal it, and let it dry. (mAvodah Zarah 5:4)",
-                    hebrew_literal: "אם גוי נשא צנצנות יין עם יהודי ממקום למקום, אם בחזקת שמור מותר. ואם הודיע לו שהוא יוצא, ויש שהות לנקוב וליסום וליובש - אסור. ר' שמעון בן גמליאל אומר: ויש שהות לפתוח וליסום וליובש. (משנה עבודה זרה 5:4)",
-                    hebrew_natural: "אם גוי נשא צנצנות יין עם יהודי ממקום למקום: אם הנחת הדבר הייתה שהוא מושגח, זה מותר. אך אם אמר לו שהוא הולך לצאת, אז אם היה זמן מספיק לגוי לנקב חור, לסתום אותו וליבשו - כל היין אסור. ר' שמעון בן גמליאל אומר: אם היה זמן מספיק לפתוח אותו, לחתום אותו וליבשו. (משנה עבודה זרה 5:4)"
+                    english: "As long as the Jew's wine or the non-Jewish worker is being watched, or as long as the non-Jewish worker has reason to think that he is being watched, no untoward contact will be made with the wine, and it is therefore permitted. But if the non-Jewish worker is told that he will be left alone with the wine for a period of time, then if this period is long enough for him to open a jar, seal it, and dry up all spillages, all the wine becomes forbidden.",
+                    hebrew_literal: "כל עוד היהודי משגיח על היין או על הגוי, או כל עוד לגוי יש סיבה להניח שהוא תחת השגחה, לא יבצע מגע בלתי ראוי עם היין, וממילא היין יהיה מותר. אך אם לגוי אומרו שישארו לבדו עם היין למשך זמן מסוים, אזי אם זמן זה מספיק כדי לפתוח צנצנת, לחתום אותה וליבש כל טיפת יין שנשפכה, כל היין הופך להיות אסור.",
+                    hebrew_natural: "כל זמן שהיהודי משגיח על היין או על הגוי, או כל זמן שלגוי יש סיבה להניח שהוא תחת השגחה, לא יבצע מגע בלתי ראוי עם היין, וממילא היין יהיה מותר. אך אם לגוי אומרו שישארו לבדו עם היין למשך זמן מסוים, אזי אם זמן זה מספיק כדי לפתוח צנצנת, לחתום אותה וליבש כל טיפת יין שנשפכה, כל היין הופך להיות אסור.",
+                    source: {
+                        hebrew: "נכרי שהיה מעביר עם ישראל כדי יין ממקום למקום\nאם היה בחזקת משתמר מותר\nאם מודיעו שהוא מפליג כדי שישתום ויסתום ויגוב\nרבן שמעון בן גמל' או' כדי שיפתח ויגוף ותיגב",
+                        english_translation: "If a non-Jew was carrying jars of wine with a Jew from one place to another, if the presumption was that it [the wine] / he [the non-Jew] was being watched, it is permitted. But if he [the Jew] told him that he was going out, [the wine is forbidden if there was] enough time for [the non-Jew] to bore a hole, stop it up, and dry it. R. Simon b.Gamaliel says: enough time to open it, seal it, and let it dry. (mAvodah Zarah 5:4)"
+                    }
                 },
                 {
                     english: "As long as the Jew's wine or the non-Jewish worker is being watched, or as long as the non-Jewish worker has reason to think that he is being watched, no untoward contact will be made with the wine, and it is therefore permitted. But if the non-Jewish worker is told that he will be left alone with the wine for a period of time, then if this period is long enough for him to open a jar, seal it, and dry up all spillages, all the wine becomes forbidden.",
@@ -60,14 +64,22 @@ const shashaArticle = {
                     hebrew_natural: "כל זמן שהיהודי משגיח על היין או על הגוי, או כל זמן שלגוי יש סיבה להניח שהוא תחת השגחה, לא יבצע מגע בלתי ראוי עם היין, וממילא היין יהיה מותר. אך אם לגוי אומרו שישארו לבדו עם היין למשך זמן מסוים, אזי אם זמן זה מספיק כדי לפתוח צנצנת, לחתום אותה וליבש כל טיפת יין שנשפכה, כל היין הופך להיות אסור."
                 },
                 {
-                    english: "If a detachment entered a city, if it was a time of peace, opened jars are forbidden and sealed jars are permitted. If it was a time of war, both are permitted, because there was no leisure to make libations. (mAZ 5:8)",
-                    hebrew_literal: "אם גדוד נכנס לעיר – בשעת שלום, כדים פתוחים אסורים וכדים סתומים מותרים. בשעת מלחמה, כולם מותרים, מפני שאין שהות לנסוך. (משנה עבודה זרה 5:8)",
-                    hebrew_natural: "אם גדוד נכנס לעיר: אם זה בתקופת שלום, צנצנות פתוחות אסורות וצנצנות סגורות מותרות. אם זה בתקופת מלחמה, שניהם מותרים - כי אין זמן לחיילים לנסך. (משנה עבודה זרה 5:8)"
+                    english: "As was well known in ancient society, when a military detachment entered a city, the expectation was that houses would be billeted and private food supplies raided. All open jars, wherever they were in the city, could thus be suspected of having been accessed by the soldiers. The Mishnah distinguishes, however, between peacetime and wartime. In wartime, when soldiers have 'no leisure to make libations', even open wine-jars are permitted.",
+                    hebrew_literal: "כפי שהיה ידוע היטב בחברה העתיקה, כאשר גדוד חיילים נכנס לעיר, הצפוי היה שבתים יהיו בתפיסה וצפי אוכל פרטי יהיה נלכד. כל צנצנות פתוחות בעיר יכלו להיות חשודות בכך שחיילים באו בקשר איתן. אך המשנה מבחינה בין תקופת שלום לתקופת מלחמה: בתקופת מלחמה, כאשר לחיילים 'אין זמן לנסך', אפילו צנצנות יין פתוחות מותרות.",
+                    hebrew_natural: "כפי שהיה ידוע היטב בחברה העתיקה, כאשר גדוד חיילים נכנס לעיר, הצפוי היה שבתים יהיו בתפיסה וצפי אוכל פרטי יהיה נלכד. כל צנצנות פתוחות בעיר יכלו להיות חשודות בכך שחיילים באו בקשר איתן. אך המשנה מבחינה בין תקופת שלום לתקופת מלחמה: בתקופת מלחמה, כאשר לחיילים 'אין זמן לנסך', אפילו צנצנות יין פתוחות מותרות.",
+                    source: {
+                        hebrew: "אם גדוד נכנס לעיר\nאם היה בשעת שלום כדים פתוחים אסורים וכדים סתומים מותרים\nבשעת מלחמה שניהם מותרים מפני שאין שהות לנסוך",
+                        english_translation: "If a detachment entered a city, if it was a time of peace, opened jars are forbidden and sealed jars are permitted. If it was a time of war, both are permitted, because there was no leisure to make libations. (mAZ 5:8)"
+                    }
                 },
                 {
-                    english: "If one works with a non-Jew in a wine-press, and the [non-Jew] brings the pressed grapes [lit. 'bread'] up to the heap and down from the heap, even though wine is running on his hands, it is permitted, because it is not their way to make libations like that. (tAZ 7(8):3)",
-                    hebrew_literal: "אם עובד עם גוי בגת, והגוי מביא את גבישי הענבים עד הערימה וחוזר מהערימה, ואפילו אם יין זורם על ידיו - היין מותר, כיוון שאין זה דרכם לנסך בשלב זה. (תוספתא עבודה זרה 7(8):3)",
-                    hebrew_natural: "אם עובד עם גוי בגת, והגוי מביא את גבישי הענבים עד הערימה וחוזר מהערימה, ואפילו אם יין זורם על ידיו - היין מותר, כיוון שאין זה דרכם לנסך בשלב זה. (תוספתא עבודה זרה 7(8):3)"
+                    english: "This case is again permissive, as it concerns the stage when the wine is still being produced: the wine is permitted because 'they' (non-Jews) do not make libations at this stage in its production. Again, this is an exception that proves the rule. The implication of this passage is that in most other situations, non-Jews in contact with wine will make libations, thus rendering the wine forbidden.",
+                    hebrew_literal: "גם במקרה זה מדובר בפטור, שכן הוא נוגע לשלב שבו היין עדיין בתהליך הייצור: היין מותר כיוון ש'הם' (הגויים) אינם נוספים נסיכות בשלב זה של הייצור. שוב, זה חריג המוכיח את הכלל. משמעות הקטע היא שברוב הנסיבות האחרות, כאשר גויים באים במגע עם יין, הם ינסכו אותו, וממילא היין יהפוך לאסור.",
+                    hebrew_natural: "גם במקרה זה מדובר בפטור, שכן הוא נוגע לשלב שבו היין עדיין בתהליך הייצור: היין מותר כיוון ש'הם' (הגויים) אינם נוספים נסיכות בשלב זה של הייצור. שוב, זה חריג המוכיח את הכלל. משמעות הקטע היא שברוב הנסיבות האחרות, כאשר גויים באים במגע עם יין, הם ינסכו אותו, וממילא היין יהפוך לאסור.",
+                    source: {
+                        hebrew: "הרוחץ עם גוי בגת אם הוא מעלה את הלחם מן החפיט וממטיל אותו מן החפיט ואפילו שיין צף על ידיו מותר שאין דרכם לנסוך כן",
+                        english_translation: "If one works with a non-Jew in a wine-press, and the [non-Jew] brings the pressed grapes [lit. 'bread'] up to the heap and down from the heap, even though wine is running on his hands, it is permitted, because it is not their way to make libations like that. (tAZ 7(8):3)"
+                    }
                 },
                 {
                     english: "This case is again permissive, as it concerns the stage when the wine is still being produced: the wine is permitted because 'they' (non-Jews) do not make libations at this stage in its production. Again, this is an exception that proves the rule. The implication of this passage is that in most other situations, non-Jews in contact with wine will make libations, thus rendering the wine forbidden.",
@@ -75,9 +87,13 @@ const shashaArticle = {
                     hebrew_natural: "גם במקרה זה מדובר בפטור, שכן הוא נוגע לשלב שבו היין עדיין בתהליך הייצור: היין מותר כיוון ש'הם' (הגויים) אינם נוספים נסיכות בשלב זה של הייצור. שוב, זה חריג המוכיח את הכלל. משמעות הקטע היא שברוב הנסיבות האחרות, כאשר גויים באים במגע עם יין, הם ינסכו אותו, וממילא היין יהפוך לאסור."
                 },
                 {
-                    english: "If a bailiff stretched his hand into a jar thinking it was oil, and it turned out to be wine – this was an actual case, whereupon they came and asked the sages, who said: 'let them all be sold to non-Jews'. If a non-Jewish agoranomos (market controller) tasted from a cup and returned it to the jar – it is forbidden. (tAZ 7(8):6)",
-                    hebrew_literal: "אם חרם השיט את ידו לכד, וחשב שלא שמן, והזה יין – מעשה היה וביקשו את החכמים. אמרו להם: שומרו לכ״ד. גוי שטעם מן הכוס והחזיר לכד – אסור. (תוספתא עבודה זרה 7(8):6)",
-                    hebrew_natural: "אם שומר קרן הושיט את ידו לצנצנת בחשבון שזהו שמן, ובהתברר שזה היין - זה היה מקרה ממשי ולכן שאלו את החכמים, שענו: 'שכולן יימכרו לגויים'. אם גוי שומר שוק טעם מהגביע והחזיר אותו לצנצנת - היא אסורה. (תוספתא עבודה זרה 7(8):6)"
+                    english: "This passage implies that it is enough for a non-Jew to touch the wine or to taste it for the wine to become a libation. Later, talmudic sources go further in this direction.",
+                    hebrew_literal: "קטע זה מעיד שמספיק שגוי יגע ביין או יטעום אותו כדי שהיין הפוך למנוסך. בהמשך, מקורות תלמודיים מרחיקים את קו זה עוד יותר.",
+                    hebrew_natural: "קטע זה מעיד שמספיק שגוי יגע ביין או יטעום אותו כדי שהיין הפוך למנוסך. בהמשך, מקורות תלמודיים מרחיקים את קו זה עוד יותר.",
+                    source: {
+                        hebrew: "חרם ששלח ידו לכד וחשב שלא שמן והזה יין מעשה היה וביקשו את החכמים אמרו להם שומרו לכ״ד\nגוי אגורנומוס שטעם מן הכוס והחזיר לכד אסור",
+                        english_translation: "If a bailiff stretched his hand into a jar thinking it was oil, and it turned out to be wine – this was an actual case, whereupon they came and asked the sages, who said: 'let them all be sold to non-Jews'. If a non-Jewish agoranomos (market controller) tasted from a cup and returned it to the jar – it is forbidden. (tAZ 7(8):6)"
+                    }
                 },
                 {
                     english: "This passage implies that it is enough for a non-Jew to touch the wine or to taste it for the wine to become a libation. Later, talmudic sources go further in this direction.",

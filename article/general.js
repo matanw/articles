@@ -129,6 +129,12 @@ class ArticleViewer {
             html += `<h2>${section.title}</h2>`;
             section.paragraphs.forEach(para => {
                 html += `<p>${para.english}</p>`;
+                if (para.source) {
+                    html += `<div class="source-block">
+                        <div class="source-hebrew">${para.source.hebrew}</div>
+                        <div class="source-english">${para.source.english_translation}</div>
+                    </div>`;
+                }
             });
         });
         html += '</div>';
@@ -144,6 +150,11 @@ class ArticleViewer {
                     ? para.hebrew_literal
                     : para.hebrew_natural;
                 html += `<p>${text}</p>`;
+                if (para.source) {
+                    html += `<div class="source-block">
+                        <div class="source-hebrew">${para.source.hebrew}</div>
+                    </div>`;
+                }
             });
         });
         html += '</div>';
@@ -156,7 +167,16 @@ class ArticleViewer {
             html += `<div class="side-by-side">
                 <div class="english-column">
                     <h2>${section.title}</h2>
-                    ${section.paragraphs.map(p => `<p>${p.english}</p>`).join('')}
+                    ${section.paragraphs.map(p => {
+                        let para = `<p>${p.english}</p>`;
+                        if (p.source) {
+                            para += `<div class="source-block">
+                                <div class="source-hebrew">${p.source.hebrew}</div>
+                                <div class="source-english">${p.source.english_translation}</div>
+                            </div>`;
+                        }
+                        return para;
+                    }).join('')}
                 </div>
                 <div class="hebrew-column hebrew">
                     <h2>${section.title}</h2>
@@ -164,7 +184,13 @@ class ArticleViewer {
                         const text = this.currentTranslationMode === 'literal'
                             ? p.hebrew_literal
                             : p.hebrew_natural;
-                        return `<p>${text}</p>`;
+                        let para = `<p>${text}</p>`;
+                        if (p.source) {
+                            para += `<div class="source-block">
+                                <div class="source-hebrew">${p.source.hebrew}</div>
+                            </div>`;
+                        }
+                        return para;
                     }).join('')}
                 </div>
             </div>`;
@@ -220,6 +246,34 @@ const styles = `
     body.dark-mode h2 { color: #64b5f6; border-bottom-color: #444; }
 
     p { margin-bottom: 15px; text-align: justify; }
+
+    .source-block {
+        margin: 20px 0 25px 0;
+        padding: 15px;
+        background: #f9f9f9;
+        border-left: 4px solid #1a3a52;
+        border-radius: 4px;
+        font-style: italic;
+    }
+    body.dark-mode .source-block {
+        background: #333;
+        border-left-color: #64b5f6;
+    }
+
+    .source-hebrew {
+        margin-bottom: 8px;
+        font-family: 'David Libre', 'Frank Ruehl', 'SBL Hebrew', serif;
+        line-height: 1.6;
+    }
+
+    .source-english {
+        font-size: 0.95em;
+        color: #666;
+    }
+    body.dark-mode .source-english {
+        color: #aaa;
+    }
+
     .slider-group { display: flex; gap: 10px; align-items: center; }
     input[type="range"] { width: 150px; }
 `;
