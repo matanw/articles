@@ -164,36 +164,27 @@ class ArticleViewer {
     renderSideBySide() {
         let html = '<div class="side-by-side-container">';
         this.data.sections.forEach(section => {
-            html += `<div class="side-by-side">
-                <div class="english-column">
-                    <h2>${section.title}</h2>
-                    ${section.paragraphs.map(p => {
-                        let para = `<p>${p.english}</p>`;
-                        if (p.source) {
-                            para += `<div class="source-block">
-                                <div class="source-hebrew">${p.source.hebrew}</div>
-                                <div class="source-english">${p.source.english_translation}</div>
-                            </div>`;
-                        }
-                        return para;
-                    }).join('')}
-                </div>
-                <div class="hebrew-column hebrew">
-                    <h2>${section.title}</h2>
-                    ${section.paragraphs.map(p => {
-                        const text = this.currentTranslationMode === 'literal'
-                            ? p.hebrew_literal
-                            : p.hebrew_natural;
-                        let para = `<p>${text}</p>`;
-                        if (p.source) {
-                            para += `<div class="source-block">
-                                <div class="source-hebrew">${p.source.hebrew}</div>
-                            </div>`;
-                        }
-                        return para;
-                    }).join('')}
-                </div>
-            </div>`;
+            html += `<h2>${section.title}</h2>`;
+            section.paragraphs.forEach(p => {
+                const hebrewText = this.currentTranslationMode === 'literal'
+                    ? p.hebrew_literal
+                    : p.hebrew_natural;
+                html += `<div class="side-by-side-row">
+                    <div class="english-column">
+                        <p>${p.english}</p>
+                        ${p.source ? `<div class="source-block">
+                            <div class="source-hebrew">${p.source.hebrew}</div>
+                            <div class="source-english">${p.source.english_translation}</div>
+                        </div>` : ''}
+                    </div>
+                    <div class="hebrew-column hebrew">
+                        <p>${hebrewText}</p>
+                        ${p.source ? `<div class="source-block">
+                            <div class="source-hebrew">${p.source.hebrew}</div>
+                        </div>` : ''}
+                    </div>
+                </div>`;
+            });
         });
         html += '</div>';
         return html;
@@ -239,8 +230,8 @@ const styles = `
     .hebrew-column { direction: rtl; text-align: right; }
     .hebrew { font-family: 'David Libre', 'Frank Ruehl', 'SBL Hebrew', 'Noto Serif Hebrew', serif; }
 
-    .side-by-side { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; column-gap: 30px; margin-bottom: 40px; }
-    @media (max-width: 1200px) { .side-by-side { grid-template-columns: 1fr; } }
+    .side-by-side-row { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 20px; }
+    @media (max-width: 1200px) { .side-by-side-row { grid-template-columns: 1fr; } }
 
     h2 { font-size: 20px; margin-top: 30px; margin-bottom: 15px; color: #1a3a52; border-bottom: 2px solid #e0e0e0; padding-bottom: 10px; }
     body.dark-mode h2 { color: #64b5f6; border-bottom-color: #444; }
